@@ -15,27 +15,27 @@ project 1 - A Random Quote Generator
 const quotes = [
   {
     quote: "Programming isn't about what you know; its about what you can figure out",
-    author: 'Grace Hopper',
+    source: 'Grace Hopper',
     citation:'computer pioneer '
   }, 
   {
     quote: "Don't comment bad code - rewrite it.",
-    author:'Brian Kernighan',
+    source:'Brian Kernighan',
     year: '01/03/2025'
   },
   {
     quote: 'Technical problems can be remeditiated. A dishonest coporate culture is much harder to fix',
-    author:'Bruce Schneier',
+    source:'Bruce Schneier',
     year: '01/03/2025'
   },
   {
     quote:'Simplicity is the soul to efficiency.',
-    author:'Austin Freeman',
+    source:'Austin Freeman',
     year:'01/03/2025'
   },
   {
     quote: "Code is like humor. When you have to explain it, it's bad.",
-    author: 'Cory House',
+    source: 'Cory House',
     year: '01/03/2025'
   }
 ];
@@ -60,7 +60,7 @@ function printQuote() {
   const randomQuote = getRandomQuote();
 
   let html = `<p class="quote">${randomQuote.quote}</p>`;
-  html += `<p class="author">${randomQuote.author}`;
+  html += `<p class="Source">${randomQuote.source}`;
   
   if (randomQuote.citation) {
     html += `<span class="citation">${randomQuote.citation}</span>`;
