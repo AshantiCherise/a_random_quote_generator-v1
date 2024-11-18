@@ -60,7 +60,7 @@ function printQuote() {
   const randomQuote = getRandomQuote();
 
   let html = `<p class="quote">${randomQuote.quote}</p>`;
-  html += `<p class="source">${randomQuote.author}`;
+  html += `<p class="author">${randomQuote.author}`;
   
   if (randomQuote.citation) {
     html += `<span class="citation">${randomQuote.citation}</span>`;
